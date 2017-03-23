@@ -1,9 +1,0 @@
-mixin b_download-link(image, title, url)
-	+b("a").download-link(href=url, target="_blank" rel="nofollow noopener")
-		if image
-			+e("span").image
-				+e("img").image-i(src=image, alt="")
-		if title
-			+e("span").title!= title
-
-

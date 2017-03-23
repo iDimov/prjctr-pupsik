@@ -1,12 +1,5 @@
-mixin post(classes, image='http://lorempixel.com/500/800/')
-	+b("section").post(class=classes)
-		+e("ul").list
-			+e("li").item_left
-				+e("h2").caption_left REAL MAN GO TO REAL <br> BARBERS
-				+e("p").text
-					Barbers know how to cut a man’s hair. If you’re like some men, you’re probably going to some unisex chain salon. Most of the time, you will walk out of these places with a bad haircut.   Sometimes, your haircut could look decent for the first week or so, but then it could grow out into a horrible bowl. The problem is that many of the people who work at salons are not trained barbers. They are cosmetologists. The difference between these two can be the difference between a bad looking haircut and a great one.
-			+e("li").item_right
-				+e("h2").caption_right REAL MAN GO TO REAL <br> BARBERS
-				//- 'img/mens.jpg'
-				+e("img").image.lazy(src=image alt="man")
-					
+mixin post()
+	+b("section").content
+		+e("h1").title Виберіть категорію
+		+e.wraper
+			block

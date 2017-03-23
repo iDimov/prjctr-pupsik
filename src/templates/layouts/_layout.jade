@@ -7,7 +7,12 @@ html
 		include ../partials/_head
 		include ../partials/_meta
 
+
 	body
+		.preloader(style="position:fixed; top:0; right:0; left:0; background: white;bottom:0; z-index: 999;")
+			.preloader__text(style="position: absolute; top:50%; border-radius: 100%; background: blue; width:28px; height: 28px;left:50%; transition: all 1s ease; transform:translate(-50%, -50%); display: flex; align-items: center; text-align:center; justify-content: center;")
+				.preloader__value 0%
+
 		.header_container
 			+b_header
 		main.main
@@ -15,4 +20,5 @@ html
 
 		block scripts
 			script(src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
+			script(type="text/javascript" src="js/app.js")
 			script(type="text/javascript" src="js/app.js")
